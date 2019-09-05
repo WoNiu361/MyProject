@@ -1,0 +1,97 @@
+//
+//  MyProject-PrefixHeader.pch
+//  MyProject
+//
+//  Created by LYH on 2019/7/17.
+//  Copyright © 2019 LYH. All rights reserved.
+//
+
+#ifndef MyProject_PrefixHeader_pch
+#define MyProject_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - 工具类
+#import "YHBaseViewController.h"
+#import "YHMainTableViewController.h"
+#import "UILabel+YHLabel.h"
+#import "UIView+Extension.h" //对位置的 x ,y width,height,center,等
+#import "UIButton+THDButton.h"
+
+
+
+
+#pragma mark - 第三方框架
+#import <MBProgressHUD.h>
+#import <SDAutoLayout.h>
+#import <MJRefresh.h>
+
+
+
+#pragma mark - 一些宏定义
+
+// 日志输出宏定义
+#ifdef DEBUG
+// 调试状态
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else
+// 发布状态
+#define MyLog(...)
+#endif
+
+#define kRGBAColor(r,g,b,a)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define kRGBColor(r,g,b)        kRGBAColor(r,g,b,1.0)
+#define kGlobalBgColor          kRGBAColor(244,244,244,1.0)  //控制器全局颜色
+#define KRandomColor            kRGBAColor(arc4random() % 255,arc4random() % 255,arc4random() % 255,1.0)
+#define kImageNamed(imageName)  [UIImage imageNamed:imageName]
+#define URL(urlString)          [NSURL URLWithString:urlString]
+#define KImageView(imageName)   [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]]
+#define kWindow                 [UIApplication sharedApplication].keyWindow
+#define kFunctionLogo           NSLog(@"%s",__func__)
+
+//16进制转换为rgb颜色
+#define kUIColorFromHEX(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+
+#pragma mark - 屏幕尺寸方面
+
+//是否iPhoneX系列 1:iPhoneX屏幕 0:传统屏幕
+#define is_iPhoneXSeries ({\
+NSInteger tmp = 0;\
+if ([[UIApplication sharedApplication] statusBarFrame].size.height > 20) {\
+tmp = 1;\
+}else{\
+tmp = 0;\
+}\
+tmp;\
+})
+
+#define MainScreenWidth         [UIScreen mainScreen].bounds.size.width         // 屏幕宽度
+#define MainScreenHeight        [UIScreen mainScreen].bounds.size.height        // 屏幕长度
+#define SizeScaleX              MainScreenWidth/375.0                           // 屏宽比
+#define SizeScaleY              MainScreenHeight/667.0
+#define kLeftSpace              SizeScaleX * 12
+#define kCellLeftSpace          SizeScaleX * 14
+#define kNavgationBarAndStatusBarHeight     ([[UIApplication sharedApplication] statusBarFrame].size.height + self.navigationController.navigationBar.frame.size.height)  // 64    88
+#define kStatusBarHegiht        [[UIApplication sharedApplication] statusBarFrame].size.height  // 20   44
+#define kNavgationBarHegiht     self.navigationController.navigationBar.frame.size.height   // 44     44
+
+#define kSafeAreaHeight   ({ \
+CGFloat safeAreaHeight = 0.0;\
+if (@available(iOS 11.0, *)) {\
+    CGFloat safeArea = [UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom;\
+    safeAreaHeight = safeArea;\
+} else {\
+    safeAreaHeight = 0.0;\
+} \
+safeAreaHeight;\
+})
+
+
+
+#endif /* MyProject_PrefixHeader_pch */
