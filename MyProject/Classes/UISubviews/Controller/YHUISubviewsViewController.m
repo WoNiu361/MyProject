@@ -11,6 +11,7 @@
 #import "YHCollectionViewController.h"
 #import "YHMyUIViewController.h"
 #import "YHTextFieldViewController.h"
+#import "YHWebLoadViewController.h"
 
 @interface YHUISubviewsViewController ()
 
@@ -24,8 +25,8 @@
     self.title = @"控件";
     self.navigationItem.leftBarButtonItem = nil;
     
-    self.titleArray = @[@"tableView",@"collectionView",@"UIView",@"UITextField"];
-    self.detailArray = @[@"cell折叠和选择",@"collectionView知识",@"view的相关知识",@"textField知识"];
+    self.titleArray = @[@"tableView",@"collectionView",@"UIView",@"UITextField",@"LoadWeb"];
+    self.detailArray = @[@"cell折叠和选择",@"collectionView知识",@"view的相关知识",@"textField知识",@"加载网页"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -34,7 +35,8 @@
     YHCollectionViewController *collectionVC = [[YHCollectionViewController alloc] init];
     YHMyUIViewController *viewVC             = [[YHMyUIViewController alloc] init];
     YHTextFieldViewController *textFieldVC   = [[YHTextFieldViewController alloc] init];
-    NSArray *vcArray                         = @[tableVC,collectionVC,viewVC,textFieldVC];
+    YHWebLoadViewController *webLoadVC       = [[YHWebLoadViewController alloc] init];
+    NSArray *vcArray                         = @[tableVC,collectionVC,viewVC,textFieldVC,webLoadVC];
     [self.navigationController pushViewController:vcArray[indexPath.row] animated:YES];
 }
 

@@ -36,6 +36,10 @@
 		149620DA22F2E786009C38CB /* MBProgressHUD+YHProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 149620D922F2E786009C38CB /* MBProgressHUD+YHProgressHUD.m */; };
 		149620DE22F3D227009C38CB /* YHRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149620DD22F3D227009C38CB /* YHRunTimeViewController.m */; };
 		149620E222F3E006009C38CB /* YHRunTimeTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 149620E122F3E006009C38CB /* YHRunTimeTestModel.m */; };
+		14A60F1523235BC00020F8E7 /* YHWebLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A60F1423235BC00020F8E7 /* YHWebLoadViewController.m */; };
+		14A60F1823235E230020F8E7 /* YHBaseWebLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A60F1723235E230020F8E7 /* YHBaseWebLoadViewController.m */; };
+		14A60F1C2323812A0020F8E7 /* UIBarButtonItem+YHBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A60F1B2323812A0020F8E7 /* UIBarButtonItem+YHBarButtonItem.m */; };
+		14A60F1F2323A6710020F8E7 /* YHWebViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A60F1E2323A6710020F8E7 /* YHWebViewTestViewController.m */; };
 		14D4ECCB22DEB89C006009A6 /* LYHMianTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4ECCA22DEB89C006009A6 /* LYHMianTabbarController.m */; };
 		14D4ECD122DEC7B4006009A6 /* YHNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4ECD022DEC7B4006009A6 /* YHNavigationViewController.m */; };
 		14D4ECD422DEC977006009A6 /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4ECD322DEC977006009A6 /* YHBaseViewController.m */; };
@@ -106,6 +110,14 @@
 		149620DD22F3D227009C38CB /* YHRunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHRunTimeViewController.m; sourceTree = "<group>"; };
 		149620E022F3E006009C38CB /* YHRunTimeTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHRunTimeTestModel.h; sourceTree = "<group>"; };
 		149620E122F3E006009C38CB /* YHRunTimeTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHRunTimeTestModel.m; sourceTree = "<group>"; };
+		14A60F1323235BC00020F8E7 /* YHWebLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHWebLoadViewController.h; sourceTree = "<group>"; };
+		14A60F1423235BC00020F8E7 /* YHWebLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHWebLoadViewController.m; sourceTree = "<group>"; };
+		14A60F1623235E230020F8E7 /* YHBaseWebLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHBaseWebLoadViewController.h; sourceTree = "<group>"; };
+		14A60F1723235E230020F8E7 /* YHBaseWebLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHBaseWebLoadViewController.m; sourceTree = "<group>"; };
+		14A60F1A2323812A0020F8E7 /* UIBarButtonItem+YHBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YHBarButtonItem.h"; sourceTree = "<group>"; };
+		14A60F1B2323812A0020F8E7 /* UIBarButtonItem+YHBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YHBarButtonItem.m"; sourceTree = "<group>"; };
+		14A60F1D2323A6710020F8E7 /* YHWebViewTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHWebViewTestViewController.h; sourceTree = "<group>"; };
+		14A60F1E2323A6710020F8E7 /* YHWebViewTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHWebViewTestViewController.m; sourceTree = "<group>"; };
 		14D4ECC922DEB89C006009A6 /* LYHMianTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYHMianTabbarController.h; sourceTree = "<group>"; };
 		14D4ECCA22DEB89C006009A6 /* LYHMianTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYHMianTabbarController.m; sourceTree = "<group>"; };
 		14D4ECCF22DEC7B4006009A6 /* YHNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHNavigationViewController.h; sourceTree = "<group>"; };
@@ -388,6 +400,28 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		14A60F0623235B620020F8E7 /* WebLoad */ = {
+			isa = PBXGroup;
+			children = (
+				14A60F1323235BC00020F8E7 /* YHWebLoadViewController.h */,
+				14A60F1423235BC00020F8E7 /* YHWebLoadViewController.m */,
+				14A60F1623235E230020F8E7 /* YHBaseWebLoadViewController.h */,
+				14A60F1723235E230020F8E7 /* YHBaseWebLoadViewController.m */,
+				14A60F1D2323A6710020F8E7 /* YHWebViewTestViewController.h */,
+				14A60F1E2323A6710020F8E7 /* YHWebViewTestViewController.m */,
+			);
+			path = WebLoad;
+			sourceTree = "<group>";
+		};
+		14A60F19232380FE0020F8E7 /* UIBarButtonItem + Category */ = {
+			isa = PBXGroup;
+			children = (
+				14A60F1A2323812A0020F8E7 /* UIBarButtonItem+YHBarButtonItem.h */,
+				14A60F1B2323812A0020F8E7 /* UIBarButtonItem+YHBarButtonItem.m */,
+			);
+			path = "UIBarButtonItem + Category";
+			sourceTree = "<group>";
+		};
 		14D4ECC222DEB61E006009A6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +497,7 @@
 		14D4ECDE22DED04B006009A6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				14A60F19232380FE0020F8E7 /* UIBarButtonItem + Category */,
 				149620D722F2E752009C38CB /* MBProgressHUD + Category */,
 				149620A622F27827009C38CB /* UITabBar + Category */,
 				149620A522F27803009C38CB /* UIButton + Category */,
@@ -477,6 +512,7 @@
 			children = (
 				14D4ECFA22DF022F006009A6 /* YHUISubviewsViewController.h */,
 				14D4ECFB22DF022F006009A6 /* YHUISubviewsViewController.m */,
+				14A60F0623235B620020F8E7 /* WebLoad */,
 				144AE4AB22F032D900CD9DF3 /* UITextField */,
 				144AE4A122F023E300CD9DF3 /* MyView */,
 				144AE3D322EEC65900CD9DF3 /* UICollectionView */,
@@ -664,6 +700,7 @@
 				149620C322F27E5A009C38CB /* YHSystemBouncesViewController.m in Sources */,
 				144AE3DC22EEE40400CD9DF3 /* YHCustomCollectionViewViewController.m in Sources */,
 				14D4ECDD22DECBB7006009A6 /* YHAnimationViewController.m in Sources */,
+				14A60F1C2323812A0020F8E7 /* UIBarButtonItem+YHBarButtonItem.m in Sources */,
 				149620AF22F278CA009C38CB /* UIButton+THDButton.m in Sources */,
 				149620A922F27856009C38CB /* UIView+Extension.m in Sources */,
 				1470AAB322DEB12200622203 /* AppDelegate.m in Sources */,
@@ -673,6 +710,7 @@
 				149620DE22F3D227009C38CB /* YHRunTimeViewController.m in Sources */,
 				149620AC22F27860009C38CB /* UILabel+YHLabel.m in Sources */,
 				14D4ECE422DEF4BB006009A6 /* YHMainTableViewController.m in Sources */,
+				14A60F1823235E230020F8E7 /* YHBaseWebLoadViewController.m in Sources */,
 				149620C422F27E5A009C38CB /* YHCustomBouncesViewController.m in Sources */,
 				149620C622F27E5A009C38CB /* YHStringViewController.m in Sources */,
 				144AE3D922EECA8200CD9DF3 /* YHMoveCollectionViewCellViewController.m in Sources */,
@@ -684,11 +722,13 @@
 				149620DA22F2E786009C38CB /* MBProgressHUD+YHProgressHUD.m in Sources */,
 				144AE4AE22F032EC00CD9DF3 /* YHTextFieldViewController.m in Sources */,
 				14D4ECCB22DEB89C006009A6 /* LYHMianTabbarController.m in Sources */,
+				14A60F1523235BC00020F8E7 /* YHWebLoadViewController.m in Sources */,
 				14D4ECD422DEC977006009A6 /* YHBaseViewController.m in Sources */,
 				149620C722F27E5A009C38CB /* YHFunctionViewController.m in Sources */,
 				1470AAA822DEAD1600622203 /* main.m in Sources */,
 				149620E222F3E006009C38CB /* YHRunTimeTestModel.m in Sources */,
 				144AE4A422F024EE00CD9DF3 /* YHMyUIViewController.m in Sources */,
+				14A60F1F2323A6710020F8E7 /* YHWebViewTestViewController.m in Sources */,
 				144AE49B22F01F3100CD9DF3 /* YHStyleCollectionViewCell.m in Sources */,
 				14D4ECFE22DF022F006009A6 /* YHUISubviewsViewController.m in Sources */,
 			);
