@@ -21,7 +21,7 @@
                 
  2019-09-20更新：
  
-             SFSafariViewController的用法详解;
+             添加SFSafariViewController的用法，可以参考我写的详细介绍：https://www.jianshu.com/p/68f8c724ac78
              
              添加单例文件，
              
