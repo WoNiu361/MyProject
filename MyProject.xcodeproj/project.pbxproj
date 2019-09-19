@@ -18,6 +18,8 @@
 		144AE4AA22F0286200CD9DF3 /* YHDrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AE4A922F0286200CD9DF3 /* YHDrawLineView.m */; };
 		144AE4AE22F032EC00CD9DF3 /* YHTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AE4AD22F032EC00CD9DF3 /* YHTextFieldViewController.m */; };
 		144AE4B222F0348300CD9DF3 /* YHBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AE4B122F0348300CD9DF3 /* YHBaseTextField.m */; };
+		1452717F23331E330062E4F6 /* YHShareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1452717E23331E330062E4F6 /* YHShareInstance.m */; };
+		14527183233320070062E4F6 /* UIColor+YHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 14527182233320070062E4F6 /* UIColor+YHColor.m */; };
 		1470AAA022DEAD1500622203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1470AA9E22DEAD1500622203 /* Main.storyboard */; };
 		1470AAA222DEAD1600622203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1470AAA122DEAD1600622203 /* Assets.xcassets */; };
 		1470AAA522DEAD1600622203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1470AAA322DEAD1600622203 /* LaunchScreen.storyboard */; };
@@ -75,6 +77,10 @@
 		144AE4AD22F032EC00CD9DF3 /* YHTextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHTextFieldViewController.m; sourceTree = "<group>"; };
 		144AE4B022F0348300CD9DF3 /* YHBaseTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHBaseTextField.h; sourceTree = "<group>"; };
 		144AE4B122F0348300CD9DF3 /* YHBaseTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHBaseTextField.m; sourceTree = "<group>"; };
+		1452717D23331E330062E4F6 /* YHShareInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHShareInstance.h; sourceTree = "<group>"; };
+		1452717E23331E330062E4F6 /* YHShareInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHShareInstance.m; sourceTree = "<group>"; };
+		14527181233320070062E4F6 /* UIColor+YHColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YHColor.h"; sourceTree = "<group>"; };
+		14527182233320070062E4F6 /* UIColor+YHColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YHColor.m"; sourceTree = "<group>"; };
 		1470AA9522DEAD1500622203 /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1470AA9F22DEAD1500622203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1470AAA122DEAD1600622203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,6 +220,24 @@
 				144AE4B122F0348300CD9DF3 /* YHBaseTextField.m */,
 			);
 			path = "Inherit（继承）";
+			sourceTree = "<group>";
+		};
+		1452717C23331DFD0062E4F6 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				1452717D23331E330062E4F6 /* YHShareInstance.h */,
+				1452717E23331E330062E4F6 /* YHShareInstance.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		1452718023331FCC0062E4F6 /* UIColor + Category */ = {
+			isa = PBXGroup;
+			children = (
+				14527181233320070062E4F6 /* UIColor+YHColor.h */,
+				14527182233320070062E4F6 /* UIColor+YHColor.m */,
+			);
+			path = "UIColor + Category";
 			sourceTree = "<group>";
 		};
 		1470AA8C22DEAD1400622203 = {
@@ -434,6 +458,7 @@
 		14D4ECC322DEB631006009A6 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				1452717C23331DFD0062E4F6 /* Singleton */,
 				144AE4AF22F0340B00CD9DF3 /* Inherit（继承） */,
 				144AE49C22F0213A00CD9DF3 /* Popup（弹框） */,
 				14D4ECDE22DED04B006009A6 /* Category */,
@@ -497,6 +522,7 @@
 		14D4ECDE22DED04B006009A6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1452718023331FCC0062E4F6 /* UIColor + Category */,
 				14A60F19232380FE0020F8E7 /* UIBarButtonItem + Category */,
 				149620D722F2E752009C38CB /* MBProgressHUD + Category */,
 				149620A622F27827009C38CB /* UITabBar + Category */,
@@ -711,12 +737,14 @@
 				149620AC22F27860009C38CB /* UILabel+YHLabel.m in Sources */,
 				14D4ECE422DEF4BB006009A6 /* YHMainTableViewController.m in Sources */,
 				14A60F1823235E230020F8E7 /* YHBaseWebLoadViewController.m in Sources */,
+				14527183233320070062E4F6 /* UIColor+YHColor.m in Sources */,
 				149620C422F27E5A009C38CB /* YHCustomBouncesViewController.m in Sources */,
 				149620C622F27E5A009C38CB /* YHStringViewController.m in Sources */,
 				144AE3D922EECA8200CD9DF3 /* YHMoveCollectionViewCellViewController.m in Sources */,
 				14D4ED0722DF0B7C006009A6 /* YHSelectOneViewController.m in Sources */,
 				144AE4B222F0348300CD9DF3 /* YHBaseTextField.m in Sources */,
 				149620C522F27E5A009C38CB /* YHBouncesTableViewController.m in Sources */,
+				1452717F23331E330062E4F6 /* YHShareInstance.m in Sources */,
 				14D4ECEB22DEF923006009A6 /* YHSelectIconTableViewCell.m in Sources */,
 				14D4ED0A22DF0E34006009A6 /* YHUnfoldAndFoldViewController.m in Sources */,
 				149620DA22F2E786009C38CB /* MBProgressHUD+YHProgressHUD.m in Sources */,

@@ -19,6 +19,7 @@
 #import "UIView+Extension.h" //对位置的 x ,y width,height,center,等
 #import "UIButton+THDButton.h"
 #import "UIBarButtonItem+YHBarButtonItem.h"
+#import "UIColor+YHColor.h"
 
 
 
@@ -93,6 +94,9 @@ if (@available(iOS 11.0, *)) {\
 safeAreaHeight;\
 })
 
-
+/*
+ 2019-09-20 添加单例文件，UIColor添加分类，UIView分类添加更全面的分类，SFSafariViewController的用法详解
+ 
+ */
 
 #endif /* MyProject_PrefixHeader_pch */
