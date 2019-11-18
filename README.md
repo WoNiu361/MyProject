@@ -18,3 +18,14 @@
                 时间;
                 
                 RunTime知识；
+                
+ 2019-09-20更新：
+ 
+             添加SFSafariViewController的用法，可以参考我写的详细介绍：https://www.jianshu.com/p/68f8c724ac78
+             
+             添加单例文件，
+             
+             UIColor添加分类，
+             
+             UIView分类添加更全面的分类，
+             
