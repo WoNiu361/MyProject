@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LYHMianTabbarController.h"
+#import "YHLoginViewController.h"
+#import "YHURLConfiguration.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +23,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     LYHMianTabbarController *tabBarVC = [[LYHMianTabbarController alloc] init];
+//    YHLoginViewController *loginVC = [[YHLoginViewController alloc] init];
     self.window.rootViewController = tabBarVC;
+    
+    [YHURLConfiguration shareConfigurate].environmentType = YHDevelopEnvironmentDevelopment;
     
     [self.window makeKeyAndVisible];
     
@@ -57,3 +62,9 @@
 
 
 @end
+
+/*
+ 2019-10-21
+ 添加登录成功后返回数据归档 （YHAccount），使用YHAccountTool类保存、删除、获取用户信息。
+ 
+ */

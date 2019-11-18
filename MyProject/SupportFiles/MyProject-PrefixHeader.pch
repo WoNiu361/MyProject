@@ -28,7 +28,7 @@
 #import <MBProgressHUD.h>
 #import <SDAutoLayout.h>
 #import <MJRefresh.h>
-
+#import <MJExtension.h>
 
 
 #pragma mark - 一些宏定义

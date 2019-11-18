@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		021DCD0E8B1764E0CE4379CF /* libPods-MyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03F68EFCC0E64AE4B9B5781 /* libPods-MyProject.a */; };
+		143C1153235D48F900BE111D /* YHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C114F235D48F900BE111D /* YHLoginViewController.m */; };
+		143C1154235D48F900BE111D /* YHAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C1151235D48F900BE111D /* YHAccount.m */; };
+		143C1158235D49AA00BE111D /* YHAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C1157235D49AA00BE111D /* YHAccountTool.m */; };
 		144AE3D622EEC67A00CD9DF3 /* YHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AE3D522EEC67A00CD9DF3 /* YHCollectionViewController.m */; };
 		144AE3D922EECA8200CD9DF3 /* YHMoveCollectionViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AE3D822EECA8200CD9DF3 /* YHMoveCollectionViewCellViewController.m */; };
 		144AE3DC22EEE40400CD9DF3 /* YHCustomCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AE3DB22EEE40400CD9DF3 /* YHCustomCollectionViewViewController.m */; };
@@ -20,6 +23,12 @@
 		144AE4B222F0348300CD9DF3 /* YHBaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 144AE4B122F0348300CD9DF3 /* YHBaseTextField.m */; };
 		1452717F23331E330062E4F6 /* YHShareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1452717E23331E330062E4F6 /* YHShareInstance.m */; };
 		14527183233320070062E4F6 /* UIColor+YHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 14527182233320070062E4F6 /* UIColor+YHColor.m */; };
+		146A7B57238280CC0001D75F /* YHResponseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A7B4D238280CC0001D75F /* YHResponseResult.m */; };
+		146A7B58238280CC0001D75F /* YHHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A7B4E238280CC0001D75F /* YHHttpRequest.m */; };
+		146A7B59238280CC0001D75F /* YHHttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A7B51238280CC0001D75F /* YHHttpRequestTool.m */; };
+		146A7B5A238280CC0001D75F /* YHURLConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A7B52238280CC0001D75F /* YHURLConfiguration.m */; };
+		146A7B5B238280CC0001D75F /* YHHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A7B56238280CC0001D75F /* YHHTTPSessionManager.m */; };
+		146A7B5E238283540001D75F /* YHAFNTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146A7B5D238283540001D75F /* YHAFNTableViewController.m */; };
 		1470AAA022DEAD1500622203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1470AA9E22DEAD1500622203 /* Main.storyboard */; };
 		1470AAA222DEAD1600622203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1470AAA122DEAD1600622203 /* Assets.xcassets */; };
 		1470AAA522DEAD1600622203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1470AAA322DEAD1600622203 /* LaunchScreen.storyboard */; };
@@ -54,9 +63,17 @@
 		14D4ED0122DF0251006009A6 /* YHSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4ED0022DF0251006009A6 /* YHSelectModel.m */; };
 		14D4ED0722DF0B7C006009A6 /* YHSelectOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4ED0622DF0B7C006009A6 /* YHSelectOneViewController.m */; };
 		14D4ED0A22DF0E34006009A6 /* YHUnfoldAndFoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D4ED0922DF0E34006009A6 /* YHUnfoldAndFoldViewController.m */; };
+		14E778CC2366D3D1002F0C71 /* YHLoadAcvivityCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E778CB2366D3D1002F0C71 /* YHLoadAcvivityCoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		143C114E235D48F900BE111D /* YHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLoginViewController.h; sourceTree = "<group>"; };
+		143C114F235D48F900BE111D /* YHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLoginViewController.m; sourceTree = "<group>"; };
+		143C1151235D48F900BE111D /* YHAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHAccount.m; sourceTree = "<group>"; };
+		143C1152235D48F900BE111D /* YHAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHAccount.h; sourceTree = "<group>"; };
+		143C1155235D494000BE111D /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		143C1156235D49AA00BE111D /* YHAccountTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAccountTool.h; sourceTree = "<group>"; };
+		143C1157235D49AA00BE111D /* YHAccountTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHAccountTool.m; sourceTree = "<group>"; };
 		144AE3D422EEC67A00CD9DF3 /* YHCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHCollectionViewController.h; sourceTree = "<group>"; };
 		144AE3D522EEC67A00CD9DF3 /* YHCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHCollectionViewController.m; sourceTree = "<group>"; };
 		144AE3D722EECA8200CD9DF3 /* YHMoveCollectionViewCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHMoveCollectionViewCellViewController.h; sourceTree = "<group>"; };
@@ -81,6 +98,19 @@
 		1452717E23331E330062E4F6 /* YHShareInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHShareInstance.m; sourceTree = "<group>"; };
 		14527181233320070062E4F6 /* UIColor+YHColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YHColor.h"; sourceTree = "<group>"; };
 		14527182233320070062E4F6 /* UIColor+YHColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YHColor.m"; sourceTree = "<group>"; };
+		146A7B4C238280CC0001D75F /* YHHttpRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHttpRequestTool.h; sourceTree = "<group>"; };
+		146A7B4D238280CC0001D75F /* YHResponseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHResponseResult.m; sourceTree = "<group>"; };
+		146A7B4E238280CC0001D75F /* YHHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHttpRequest.m; sourceTree = "<group>"; };
+		146A7B4F238280CC0001D75F /* YHURLConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHURLConfiguration.h; sourceTree = "<group>"; };
+		146A7B50238280CC0001D75F /* YHHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHTTPSessionManager.h; sourceTree = "<group>"; };
+		146A7B51238280CC0001D75F /* YHHttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHttpRequestTool.m; sourceTree = "<group>"; };
+		146A7B52238280CC0001D75F /* YHURLConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHURLConfiguration.m; sourceTree = "<group>"; };
+		146A7B53238280CC0001D75F /* YHHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHttpRequest.h; sourceTree = "<group>"; };
+		146A7B54238280CC0001D75F /* YHResponseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHResponseResult.h; sourceTree = "<group>"; };
+		146A7B55238280CC0001D75F /* ServiceConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceConfigure.h; sourceTree = "<group>"; };
+		146A7B56238280CC0001D75F /* YHHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHTTPSessionManager.m; sourceTree = "<group>"; };
+		146A7B5C238283540001D75F /* YHAFNTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAFNTableViewController.h; sourceTree = "<group>"; };
+		146A7B5D238283540001D75F /* YHAFNTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHAFNTableViewController.m; sourceTree = "<group>"; };
 		1470AA9522DEAD1500622203 /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1470AA9F22DEAD1500622203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1470AAA122DEAD1600622203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,6 +178,8 @@
 		14D4ED0622DF0B7C006009A6 /* YHSelectOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHSelectOneViewController.m; sourceTree = "<group>"; };
 		14D4ED0822DF0E34006009A6 /* YHUnfoldAndFoldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHUnfoldAndFoldViewController.h; sourceTree = "<group>"; };
 		14D4ED0922DF0E34006009A6 /* YHUnfoldAndFoldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHUnfoldAndFoldViewController.m; sourceTree = "<group>"; };
+		14E778CA2366D3D1002F0C71 /* YHLoadAcvivityCoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHLoadAcvivityCoverViewController.h; sourceTree = "<group>"; };
+		14E778CB2366D3D1002F0C71 /* YHLoadAcvivityCoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHLoadAcvivityCoverViewController.m; sourceTree = "<group>"; };
 		45898C643054EA1F2236B300 /* Pods-MyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.release.xcconfig"; path = "Target Support Files/Pods-MyProject/Pods-MyProject.release.xcconfig"; sourceTree = "<group>"; };
 		9885B2EEF5313897732E8F31 /* Pods-MyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.debug.xcconfig"; path = "Target Support Files/Pods-MyProject/Pods-MyProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C03F68EFCC0E64AE4B9B5781 /* libPods-MyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +197,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143C114C235D48F900BE111D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				143C114D235D48F900BE111D /* Controller */,
+				143C1150235D48F900BE111D /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		143C114D235D48F900BE111D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				143C114E235D48F900BE111D /* YHLoginViewController.h */,
+				143C114F235D48F900BE111D /* YHLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		143C1150235D48F900BE111D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				143C1155235D494000BE111D /* Singleton.h */,
+				143C1152235D48F900BE111D /* YHAccount.h */,
+				143C1151235D48F900BE111D /* YHAccount.m */,
+				143C1156235D49AA00BE111D /* YHAccountTool.h */,
+				143C1157235D49AA00BE111D /* YHAccountTool.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		144AE3D322EEC65900CD9DF3 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +302,34 @@
 			path = "UIColor + Category";
 			sourceTree = "<group>";
 		};
+		146A7B4A23827FC00001D75F /* AFNetworkingPackage（AFN封装） */ = {
+			isa = PBXGroup;
+			children = (
+				146A7B4B238280CC0001D75F /* AFN_Package_Tool */,
+				146A7B5C238283540001D75F /* YHAFNTableViewController.h */,
+				146A7B5D238283540001D75F /* YHAFNTableViewController.m */,
+			);
+			path = "AFNetworkingPackage（AFN封装）";
+			sourceTree = "<group>";
+		};
+		146A7B4B238280CC0001D75F /* AFN_Package_Tool */ = {
+			isa = PBXGroup;
+			children = (
+				146A7B55238280CC0001D75F /* ServiceConfigure.h */,
+				146A7B53238280CC0001D75F /* YHHttpRequest.h */,
+				146A7B4E238280CC0001D75F /* YHHttpRequest.m */,
+				146A7B4C238280CC0001D75F /* YHHttpRequestTool.h */,
+				146A7B51238280CC0001D75F /* YHHttpRequestTool.m */,
+				146A7B50238280CC0001D75F /* YHHTTPSessionManager.h */,
+				146A7B56238280CC0001D75F /* YHHTTPSessionManager.m */,
+				146A7B54238280CC0001D75F /* YHResponseResult.h */,
+				146A7B4D238280CC0001D75F /* YHResponseResult.m */,
+				146A7B4F238280CC0001D75F /* YHURLConfiguration.h */,
+				146A7B52238280CC0001D75F /* YHURLConfiguration.m */,
+			);
+			path = AFN_Package_Tool;
+			sourceTree = "<group>";
+		};
 		1470AA8C22DEAD1400622203 = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +375,7 @@
 		1470AAAF22DEB0BB00622203 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				143C114C235D48F900BE111D /* Login */,
 				14D4ECCE22DEC78C006009A6 /* Functions */,
 				14D4ECCD22DEC65A006009A6 /* UISubviews */,
 				14D4ECCC22DEBCAC006009A6 /* Animation */,
@@ -341,6 +432,7 @@
 			children = (
 				149620C122F27E5A009C38CB /* YHFunctionViewController.h */,
 				149620C222F27E5A009C38CB /* YHFunctionViewController.m */,
+				146A7B4A23827FC00001D75F /* AFNetworkingPackage（AFN封装） */,
 				149620DB22F3CC39009C38CB /* RunTime */,
 				149620B622F27E5A009C38CB /* BouncedRemaind（弹框提醒） */,
 				149620BD22F27E5A009C38CB /* NSDate */,
@@ -538,6 +630,7 @@
 			children = (
 				14D4ECFA22DF022F006009A6 /* YHUISubviewsViewController.h */,
 				14D4ECFB22DF022F006009A6 /* YHUISubviewsViewController.m */,
+				14E778C92366D37B002F0C71 /* LoadActivity */,
 				14A60F0623235B620020F8E7 /* WebLoad */,
 				144AE4AB22F032D900CD9DF3 /* UITextField */,
 				144AE4A122F023E300CD9DF3 /* MyView */,
@@ -582,6 +675,15 @@
 				14D4ED0922DF0E34006009A6 /* YHUnfoldAndFoldViewController.m */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		14E778C92366D37B002F0C71 /* LoadActivity */ = {
+			isa = PBXGroup;
+			children = (
+				14E778CA2366D3D1002F0C71 /* YHLoadAcvivityCoverViewController.h */,
+				14E778CB2366D3D1002F0C71 /* YHLoadAcvivityCoverViewController.m */,
+			);
+			path = LoadActivity;
 			sourceTree = "<group>";
 		};
 		8AB7D7070833B279AF38CF14 /* Pods */ = {
@@ -716,13 +818,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143C1158235D49AA00BE111D /* YHAccountTool.m in Sources */,
 				14D4ECD122DEC7B4006009A6 /* YHNavigationViewController.m in Sources */,
+				14E778CC2366D3D1002F0C71 /* YHLoadAcvivityCoverViewController.m in Sources */,
 				149620CE22F282C9009C38CB /* YHDateViewController.m in Sources */,
 				144AE4AA22F0286200CD9DF3 /* YHDrawLineView.m in Sources */,
 				14D4ECFC22DF022F006009A6 /* YHTableViewController.m in Sources */,
+				146A7B59238280CC0001D75F /* YHHttpRequestTool.m in Sources */,
 				144AE49822F01DEE00CD9DF3 /* YHCustomCollectionViewFlowLayout.m in Sources */,
 				14D4ECFD22DF022F006009A6 /* YHMoreSelectViewController.m in Sources */,
 				144AE3D622EEC67A00CD9DF3 /* YHCollectionViewController.m in Sources */,
+				143C1153235D48F900BE111D /* YHLoginViewController.m in Sources */,
+				146A7B58238280CC0001D75F /* YHHttpRequest.m in Sources */,
+				146A7B5A238280CC0001D75F /* YHURLConfiguration.m in Sources */,
 				149620C322F27E5A009C38CB /* YHSystemBouncesViewController.m in Sources */,
 				144AE3DC22EEE40400CD9DF3 /* YHCustomCollectionViewViewController.m in Sources */,
 				14D4ECDD22DECBB7006009A6 /* YHAnimationViewController.m in Sources */,
@@ -737,14 +845,17 @@
 				149620AC22F27860009C38CB /* UILabel+YHLabel.m in Sources */,
 				14D4ECE422DEF4BB006009A6 /* YHMainTableViewController.m in Sources */,
 				14A60F1823235E230020F8E7 /* YHBaseWebLoadViewController.m in Sources */,
+				143C1154235D48F900BE111D /* YHAccount.m in Sources */,
 				14527183233320070062E4F6 /* UIColor+YHColor.m in Sources */,
 				149620C422F27E5A009C38CB /* YHCustomBouncesViewController.m in Sources */,
 				149620C622F27E5A009C38CB /* YHStringViewController.m in Sources */,
+				146A7B57238280CC0001D75F /* YHResponseResult.m in Sources */,
 				144AE3D922EECA8200CD9DF3 /* YHMoveCollectionViewCellViewController.m in Sources */,
 				14D4ED0722DF0B7C006009A6 /* YHSelectOneViewController.m in Sources */,
 				144AE4B222F0348300CD9DF3 /* YHBaseTextField.m in Sources */,
 				149620C522F27E5A009C38CB /* YHBouncesTableViewController.m in Sources */,
 				1452717F23331E330062E4F6 /* YHShareInstance.m in Sources */,
+				146A7B5B238280CC0001D75F /* YHHTTPSessionManager.m in Sources */,
 				14D4ECEB22DEF923006009A6 /* YHSelectIconTableViewCell.m in Sources */,
 				14D4ED0A22DF0E34006009A6 /* YHUnfoldAndFoldViewController.m in Sources */,
 				149620DA22F2E786009C38CB /* MBProgressHUD+YHProgressHUD.m in Sources */,
@@ -757,6 +868,7 @@
 				149620E222F3E006009C38CB /* YHRunTimeTestModel.m in Sources */,
 				144AE4A422F024EE00CD9DF3 /* YHMyUIViewController.m in Sources */,
 				14A60F1F2323A6710020F8E7 /* YHWebViewTestViewController.m in Sources */,
+				146A7B5E238283540001D75F /* YHAFNTableViewController.m in Sources */,
 				144AE49B22F01F3100CD9DF3 /* YHStyleCollectionViewCell.m in Sources */,
 				14D4ECFE22DF022F006009A6 /* YHUISubviewsViewController.m in Sources */,
 			);
@@ -913,7 +1025,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lyh-1140663172.MyProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
@@ -935,7 +1047,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lyh-1140663172.MyProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;

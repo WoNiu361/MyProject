@@ -11,6 +11,7 @@
 #import "YHBouncesTableViewController.h"
 #import "YHDateViewController.h"
 #import "YHRunTimeViewController.h"
+#import "YHAFNTableViewController.h"
 
 @interface YHFunctionViewController ()
 
@@ -25,8 +26,8 @@
     self.view.backgroundColor = KRandomColor;
     self.navigationItem.leftBarButtonItem = nil;
     
-    self.titleArray = @[@"NSString",@"弹框",@"时间",@"RunTime"];
-    self.detailArray = @[@"string知识",@"一些列弹框",@"时间相关知识",@"运行时相关知识"];
+    self.titleArray = @[@"NSString",@"弹框",@"时间",@"RunTime",@"AFN封装"];
+    self.detailArray = @[@"string知识",@"一些列弹框",@"时间相关知识",@"运行时相关知识",@""];
     
 }
 
@@ -36,7 +37,8 @@
     YHBouncesTableViewController *bouncesVC = [[YHBouncesTableViewController alloc] init];
     YHDateViewController *dateVC            = [[YHDateViewController alloc] init];
     YHRunTimeViewController *runTimeVC      = [[YHRunTimeViewController alloc] init];
-    NSArray<UIViewController *> *vcArray    = @[stringVC,bouncesVC,dateVC,runTimeVC];
+    YHAFNTableViewController *afnVC         = [[YHAFNTableViewController alloc] init];
+    NSArray<UIViewController *> *vcArray    = @[stringVC,bouncesVC,dateVC,runTimeVC,afnVC];
     [self.navigationController pushViewController:vcArray[indexPath.row] animated:YES];
 }
 

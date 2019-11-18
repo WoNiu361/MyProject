@@ -120,6 +120,14 @@
         
         //监听网页的标题
         [_webView addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
+    
+        [_webView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSLog(@"obj - obj -    %@",obj);
+            if ([obj isKindOfClass:[UIScrollView class]]) {
+                [(UIScrollView *)obj setShowsHorizontalScrollIndicator:false];
+                [(UIScrollView *)obj setShowsVerticalScrollIndicator:false];
+            }
+        }];
     }
     return _webView;
 }
