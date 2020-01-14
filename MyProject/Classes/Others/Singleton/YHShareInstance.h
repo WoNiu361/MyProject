@@ -95,6 +95,12 @@ NS_ASSUME_NONNULL_BEGIN
  @return 返回data类型
  */
 - (NSData *)compressImage:(UIImage *)image;
+
+/// 生成一张渐变色的图片
+/// @param colors 颜色数组
+/// @param rect 图片大小
+/// @return 渐变图片
+- (UIImage *)gradientImageWithColors:(NSArray *)colors rect:(CGRect)rect;
 @end
 
 NS_ASSUME_NONNULL_END

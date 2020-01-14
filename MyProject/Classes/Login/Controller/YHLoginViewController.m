@@ -35,7 +35,7 @@
     
     NSString *nickName = [YHAccountTool sharedYHAccountTool].account.nickName;
     NSInteger bindState = [YHAccountTool sharedYHAccountTool].account.bindState;
-    NSLog(@"naickName -  %@  \n  -  %ld",nickName,bindState);
+    NSLog(@"naickName -  %@  \n  -  %ld",nickName,(long)bindState);
     
     self.toucAccount ++;
     if (self.toucAccount == 3) {

@@ -59,7 +59,7 @@
         MyLog(@"ivar -   %s     -    %s", ivar_getName(ivar), ivar_getTypeEncoding(ivar));
       
         NSString *keyStr = [NSString stringWithUTF8String:ivar_getName(ivar)];
-//        MyLog(@"keyStr -   %@",keyStr);
+        MyLog(@"keyStr -   %@",keyStr);
         //每一个继承NSObject的类会自动得到runtime的支持,使用@property 方式定义属性时，编译器会自动为我们添加setter，getter方法并定义一个私有变量，变量前自动加_。所以，Ivar会包含@property定义的全部属性。
     }
     // 释放

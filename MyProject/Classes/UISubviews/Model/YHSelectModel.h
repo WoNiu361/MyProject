@@ -24,4 +24,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+
+@interface YHSelectStyleModel : NSObject
+
+/**   title   */
+@property (nonatomic, copy) NSString *title;
+/**   pic   */
+@property (nonatomic, copy) NSString *pic;
+/**   isSelect    */
+@property (nonatomic, assign) BOOL isSelect;
+
+/**   标注的tagzhi    */
+@property (nonatomic, assign) NSInteger markTag;
+
+@end
+
+
+
 NS_ASSUME_NONNULL_END

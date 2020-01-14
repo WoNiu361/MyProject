@@ -149,4 +149,27 @@
     }
     return imageData;
 }
+
+- (UIImage *)gradientImageWithColors:(NSArray *)colors rect:(CGRect)rect {
+    
+    if (!colors.count || CGRectEqualToRect(rect, CGRectZero)) {
+        return nil;
+        
+    }
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = rect;
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(1, 0);
+    NSMutableArray *mutColors = [NSMutableArray arrayWithCapacity:colors.count];
+    for (UIColor *color in colors) {
+        [mutColors addObject:(__bridge id)color.CGColor];
+        
+    }
+    gradientLayer.colors = [NSArray arrayWithArray:mutColors];
+    UIGraphicsBeginImageContextWithOptions(gradientLayer.frame.size, gradientLayer.opaque, 0);
+    [gradientLayer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *outputImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return outputImage;
+}
 @end

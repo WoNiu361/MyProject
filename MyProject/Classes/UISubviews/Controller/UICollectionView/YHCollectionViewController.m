@@ -9,6 +9,8 @@
 #import "YHCollectionViewController.h"
 #import "YHMoveCollectionViewCellViewController.h"
 #import "YHCustomCollectionViewViewController.h"
+#import "YHGetPhotoAlbumImageViewController.h"
+
 
 @interface YHCollectionViewController ()
 
@@ -21,15 +23,17 @@
     
     self.title = @"collectionView知识";
     
-    self.titleArray = @[@"移动collectionViewCell",@"自定义UICollectionViewFlowLayout",];
-    self.detailArray = @[@"移动cell",@"自定义"];
+    self.titleArray = @[@"移动collectionViewCell",@"自定义UICollectionViewFlowLayout",@"获取相册图片"];
+    self.detailArray = @[@"移动cell",@"自定义",@"模仿微信选择图片"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     YHMoveCollectionViewCellViewController *moveVC = [[YHMoveCollectionViewCellViewController alloc] init];
     YHCustomCollectionViewViewController *customVC = [[YHCustomCollectionViewViewController alloc] init];
-    NSArray *vcArray = @[moveVC,customVC];
+    YHGetPhotoAlbumImageViewController *imageVC    = [[YHGetPhotoAlbumImageViewController alloc] init];
+
+    NSArray *vcArray = @[moveVC,customVC,imageVC];
     [self.navigationController pushViewController:vcArray[indexPath.row] animated:YES];
 }
 

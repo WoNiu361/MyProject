@@ -76,7 +76,7 @@
             
         case YHHttpRequestPostUpload: {
             self.requestUrl = @"http://foreman.91thd.com/GcManage/uploadSinglePic";
-            UIImage *headImage;
+            UIImage *headImage = [[UIImage alloc] init];;
             NSData *imageData = UIImageJPEGRepresentation(headImage, 1);
             [manager POST:self.requestUrl parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
                 //根据实际情况，自行添加

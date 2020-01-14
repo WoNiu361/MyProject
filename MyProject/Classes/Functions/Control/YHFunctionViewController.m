@@ -12,6 +12,7 @@
 #import "YHDateViewController.h"
 #import "YHRunTimeViewController.h"
 #import "YHAFNTableViewController.h"
+#import "YHThreadViewController.h"
 
 @interface YHFunctionViewController ()
 
@@ -26,8 +27,8 @@
     self.view.backgroundColor = KRandomColor;
     self.navigationItem.leftBarButtonItem = nil;
     
-    self.titleArray = @[@"NSString",@"弹框",@"时间",@"RunTime",@"AFN封装"];
-    self.detailArray = @[@"string知识",@"一些列弹框",@"时间相关知识",@"运行时相关知识",@""];
+    self.titleArray = @[@"NSString",@"弹框",@"时间",@"RunTime",@"AFN封装",@"线程"];
+    self.detailArray = @[@"string知识",@"一些列弹框",@"时间相关知识",@"运行时相关知识",@"",@"线程的全部知识"];
     
 }
 
@@ -38,7 +39,8 @@
     YHDateViewController *dateVC            = [[YHDateViewController alloc] init];
     YHRunTimeViewController *runTimeVC      = [[YHRunTimeViewController alloc] init];
     YHAFNTableViewController *afnVC         = [[YHAFNTableViewController alloc] init];
-    NSArray<UIViewController *> *vcArray    = @[stringVC,bouncesVC,dateVC,runTimeVC,afnVC];
+    YHThreadViewController *threadVC        = [[YHThreadViewController alloc] init];
+    NSArray<UIViewController *> *vcArray    = @[stringVC,bouncesVC,dateVC,runTimeVC,afnVC,threadVC];
     [self.navigationController pushViewController:vcArray[indexPath.row] animated:YES];
 }
 
