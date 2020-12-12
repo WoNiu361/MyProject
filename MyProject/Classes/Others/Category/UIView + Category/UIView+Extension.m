@@ -198,4 +198,31 @@
     return vi;
 }
 
+- (void)wx_addCorner:(UIRectCorner)corner cornerRadius:(CGFloat)cornerRadius{
+    
+    NSCAssert(self.bounds.size.width != 0 && self.bounds.size.height != 0, @"必须得到目标View的实际bounds");
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corner cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
+- (void)wx_shadow:(UIView *)view {
+    
+    view.backgroundColor = [UIColor whiteColor];
+    view.layer.shadowColor = [[UIColor colorFromHexCode:@"000000"] colorWithAlphaComponent:0.5].CGColor;
+    view.layer.shadowOpacity = 0.2;
+    view.layer.shadowOffset = CGSizeMake(0, 0);
+    view.layer.shadowRadius = 2;
+    view.layer.cornerRadius = 5;
+}
+
++ (UIColor*)randomColor {
+    
+    UIColor * randomColor= [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
+    
+    return randomColor;
+}
+
 @end

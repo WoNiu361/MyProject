@@ -26,6 +26,7 @@
 #import "UIImageView+YHImageView.h"
 #import "Masonry.h"
 #import "YHSVProgressHUD.h"
+#import "NSString+YHString.h"
 
 
 #pragma mark - 第三方框架

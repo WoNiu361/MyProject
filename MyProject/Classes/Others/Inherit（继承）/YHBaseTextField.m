@@ -39,11 +39,19 @@ static NSString *const placerholderColorKeyPath = @"_placeholderLabel.textColor"
         //设置光标的颜色
         self.tintColor = [UIColor blackColor];
         
-        self.placeholder = placeholder;
-        //更改占位符的颜色
-        [self setValue:color forKeyPath:@"_placeholderLabel.textColor"];
-        //更改占位符的字体大小
-        [self setValue:[UIFont systemFontOfSize:font weight:UIFontWeightMedium] forKeyPath:@"_placeholderLabel.font"];
+        if (@available(iOS 13.0, *)) {
+            self.attributedPlaceholder = [[NSMutableAttributedString alloc]initWithString:placeholder attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14 weight:UIFontWeightRegular],NSForegroundColorAttributeName:color}];
+        } else {
+            [self setValue:color forKeyPath:@"_placeholderLabel.textColor"];//更改占位符的颜色
+            [self setValue:[UIFont systemFontOfSize:font weight:UIFontWeightRegular] forKeyPath:@"_placeholderLabel.font"]; //更改占位符的字体大小
+            self.placeholder = placeholder;
+        }
+        
+//        self.placeholder = placeholder;
+//        //更改占位符的颜色
+//        [self setValue:color forKeyPath:@"_placeholderLabel.textColor"];
+//        //更改占位符的字体大小
+//        [self setValue:[UIFont systemFontOfSize:font weight:UIFontWeightMedium] forKeyPath:@"_placeholderLabel.font"];
         //设置输入区域的背景颜色
 //        [self setValue:[UIColor lightGrayColor] forKeyPath:@"textContentView.backgroundColor"];
 //        [self setValue:[UIColor blackColor] forKeyPath:@"backgroundView.backgroundColor"];

@@ -66,4 +66,19 @@
                              borderWidth:(CGFloat)borderWidth
                              borderColor:(UIColor *)borderColor
                                    frame:(CGRect)frame;
+
+/**
+ 给View添加圆角，用于少量圆角显示。
+
+ @param corner 圆角方向
+ @param cornerRadius 圆角
+ */
+- (void)wx_addCorner:(UIRectCorner)corner cornerRadius:(CGFloat)cornerRadius;
+
+/**
+给View添加阴影。
+*/
+- (void)wx_shadow:(UIView *)view;
+
++ (UIColor*)randomColor;
 @end

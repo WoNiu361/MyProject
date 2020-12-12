@@ -8,7 +8,6 @@
 
 #import "YHRunTimeViewController.h"
 #import "YHRunTimeTestModel.h"
-#import <objc/runtime.h>
 
 @interface YHRunTimeViewController ()
 

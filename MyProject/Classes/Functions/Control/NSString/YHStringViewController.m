@@ -93,7 +93,8 @@
     NSMutableAttributedString *attributedString1 = [[NSMutableAttributedString alloc]initWithString:textString];
     NSMutableParagraphStyle *paragraphyStyle = [[NSMutableParagraphStyle alloc]init];
     paragraphyStyle.lineSpacing = 10;
-    paragraphyStyle.firstLineHeadIndent = 35;//首行文字缩进
+    paragraphyStyle.firstLineHeadIndent = 35;// 首行文字缩进
+    paragraphyStyle.alignment = NSTextAlignmentCenter;// 设置文字居中
     [attributedString1 addAttribute:NSParagraphStyleAttributeName value:paragraphyStyle range:NSMakeRange(0, [textString length])];
     self.linesLabel.attributedText = attributedString1;
     [self.linesLabel sizeToFit];

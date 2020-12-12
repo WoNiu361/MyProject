@@ -15,6 +15,14 @@
 		140945A723CD994A00C9AEA2 /* YHSVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 140945A623CD994A00C9AEA2 /* YHSVProgressHUD.m */; };
 		140945B323CDA9F900C9AEA2 /* YHGetPhotoAlbumImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140945B223CDA9F900C9AEA2 /* YHGetPhotoAlbumImageViewController.m */; };
 		140945B623CDAA3D00C9AEA2 /* YHPreviewImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140945B523CDAA3D00C9AEA2 /* YHPreviewImageViewController.m */; };
+		140AE9C22584F7D60095ECFB /* UIImage+YHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 140AE9BA2584F7D60095ECFB /* UIImage+YHImage.m */; };
+		140AE9C32584F7D60095ECFB /* UIViewController+YHViewConreoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 140AE9BD2584F7D60095ECFB /* UIViewController+YHViewConreoller.m */; };
+		140AE9C42584F7D60095ECFB /* UITextField+THTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 140AE9C12584F7D60095ECFB /* UITextField+THTextField.m */; };
+		140AE9C72584F90C0095ECFB /* YHBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 140AE9C62584F90C0095ECFB /* YHBaseView.m */; };
+		140AE9CA2584F97C0095ECFB /* YHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 140AE9C92584F97C0095ECFB /* YHBaseTableViewCell.m */; };
+		140AE9CE2584FC4A0095ECFB /* UITextView+ZWPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 140AE9CD2584FC4A0095ECFB /* UITextView+ZWPlaceHolder.m */; };
+		140AE9D22584FCA70095ECFB /* NSString+YHString.m in Sources */ = {isa = PBXBuildFile; fileRef = 140AE9D12584FCA70095ECFB /* NSString+YHString.m */; };
+		140AE9D5258503C10095ECFB /* UIViewController+DZNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 140AE9D3258503C10095ECFB /* UIViewController+DZNEmpty.m */; };
 		143C1153235D48F900BE111D /* YHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C114F235D48F900BE111D /* YHLoginViewController.m */; };
 		143C1154235D48F900BE111D /* YHAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C1151235D48F900BE111D /* YHAccount.m */; };
 		143C1158235D49AA00BE111D /* YHAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C1157235D49AA00BE111D /* YHAccountTool.m */; };
@@ -95,6 +103,22 @@
 		140945B223CDA9F900C9AEA2 /* YHGetPhotoAlbumImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHGetPhotoAlbumImageViewController.m; sourceTree = "<group>"; };
 		140945B423CDAA3D00C9AEA2 /* YHPreviewImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHPreviewImageViewController.h; sourceTree = "<group>"; };
 		140945B523CDAA3D00C9AEA2 /* YHPreviewImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHPreviewImageViewController.m; sourceTree = "<group>"; };
+		140AE9BA2584F7D60095ECFB /* UIImage+YHImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YHImage.m"; sourceTree = "<group>"; };
+		140AE9BB2584F7D60095ECFB /* UIImage+YHImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YHImage.h"; sourceTree = "<group>"; };
+		140AE9BD2584F7D60095ECFB /* UIViewController+YHViewConreoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YHViewConreoller.m"; sourceTree = "<group>"; };
+		140AE9BE2584F7D60095ECFB /* UIViewController+YHViewConreoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YHViewConreoller.h"; sourceTree = "<group>"; };
+		140AE9C02584F7D60095ECFB /* UITextField+THTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+THTextField.h"; sourceTree = "<group>"; };
+		140AE9C12584F7D60095ECFB /* UITextField+THTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+THTextField.m"; sourceTree = "<group>"; };
+		140AE9C52584F90C0095ECFB /* YHBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHBaseView.h; sourceTree = "<group>"; };
+		140AE9C62584F90C0095ECFB /* YHBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHBaseView.m; sourceTree = "<group>"; };
+		140AE9C82584F97C0095ECFB /* YHBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHBaseTableViewCell.h; sourceTree = "<group>"; };
+		140AE9C92584F97C0095ECFB /* YHBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHBaseTableViewCell.m; sourceTree = "<group>"; };
+		140AE9CC2584FC4A0095ECFB /* UITextView+ZWPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ZWPlaceHolder.h"; sourceTree = "<group>"; };
+		140AE9CD2584FC4A0095ECFB /* UITextView+ZWPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ZWPlaceHolder.m"; sourceTree = "<group>"; };
+		140AE9D02584FCA70095ECFB /* NSString+YHString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YHString.h"; sourceTree = "<group>"; };
+		140AE9D12584FCA70095ECFB /* NSString+YHString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YHString.m"; sourceTree = "<group>"; };
+		140AE9D3258503C10095ECFB /* UIViewController+DZNEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DZNEmpty.m"; sourceTree = "<group>"; };
+		140AE9D4258503C10095ECFB /* UIViewController+DZNEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DZNEmpty.h"; sourceTree = "<group>"; };
 		143C114E235D48F900BE111D /* YHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHLoginViewController.h; sourceTree = "<group>"; };
 		143C114F235D48F900BE111D /* YHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHLoginViewController.m; sourceTree = "<group>"; };
 		143C1151235D48F900BE111D /* YHAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHAccount.m; sourceTree = "<group>"; };
@@ -266,6 +290,53 @@
 				140945B523CDAA3D00C9AEA2 /* YHPreviewImageViewController.m */,
 			);
 			path = PhotoAlbumSelectImage;
+			sourceTree = "<group>";
+		};
+		140AE9B92584F7D60095ECFB /* UIImage + Category */ = {
+			isa = PBXGroup;
+			children = (
+				140AE9BB2584F7D60095ECFB /* UIImage+YHImage.h */,
+				140AE9BA2584F7D60095ECFB /* UIImage+YHImage.m */,
+			);
+			path = "UIImage + Category";
+			sourceTree = "<group>";
+		};
+		140AE9BC2584F7D60095ECFB /* UIViewController+Category */ = {
+			isa = PBXGroup;
+			children = (
+				140AE9D4258503C10095ECFB /* UIViewController+DZNEmpty.h */,
+				140AE9D3258503C10095ECFB /* UIViewController+DZNEmpty.m */,
+				140AE9BE2584F7D60095ECFB /* UIViewController+YHViewConreoller.h */,
+				140AE9BD2584F7D60095ECFB /* UIViewController+YHViewConreoller.m */,
+			);
+			path = "UIViewController+Category";
+			sourceTree = "<group>";
+		};
+		140AE9BF2584F7D60095ECFB /* UITextField+Category */ = {
+			isa = PBXGroup;
+			children = (
+				140AE9C02584F7D60095ECFB /* UITextField+THTextField.h */,
+				140AE9C12584F7D60095ECFB /* UITextField+THTextField.m */,
+			);
+			path = "UITextField+Category";
+			sourceTree = "<group>";
+		};
+		140AE9CB2584FC050095ECFB /* UITextView + Category */ = {
+			isa = PBXGroup;
+			children = (
+				140AE9CC2584FC4A0095ECFB /* UITextView+ZWPlaceHolder.h */,
+				140AE9CD2584FC4A0095ECFB /* UITextView+ZWPlaceHolder.m */,
+			);
+			path = "UITextView + Category";
+			sourceTree = "<group>";
+		};
+		140AE9CF2584FC720095ECFB /* NSString + Category */ = {
+			isa = PBXGroup;
+			children = (
+				140AE9D02584FCA70095ECFB /* NSString+YHString.h */,
+				140AE9D12584FCA70095ECFB /* NSString+YHString.m */,
+			);
+			path = "NSString + Category";
 			sourceTree = "<group>";
 		};
 		143C114C235D48F900BE111D /* Login */ = {
@@ -515,13 +586,6 @@
 			path = "UIButton + Category";
 			sourceTree = "<group>";
 		};
-		149620A622F27827009C38CB /* UITabBar + Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "UITabBar + Category";
-			sourceTree = "<group>";
-		};
 		149620B422F27E29009C38CB /* Control */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +745,10 @@
 			children = (
 				14D4ECE922DEF923006009A6 /* YHSelectIconTableViewCell.h */,
 				14D4ECEA22DEF923006009A6 /* YHSelectIconTableViewCell.m */,
+				140AE9C52584F90C0095ECFB /* YHBaseView.h */,
+				140AE9C62584F90C0095ECFB /* YHBaseView.m */,
+				140AE9C82584F97C0095ECFB /* YHBaseTableViewCell.h */,
+				140AE9C92584F97C0095ECFB /* YHBaseTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -732,11 +800,15 @@
 		14D4ECDE22DED04B006009A6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				140AE9CF2584FC720095ECFB /* NSString + Category */,
+				140AE9CB2584FC050095ECFB /* UITextView + Category */,
+				140AE9B92584F7D60095ECFB /* UIImage + Category */,
+				140AE9BF2584F7D60095ECFB /* UITextField+Category */,
+				140AE9BC2584F7D60095ECFB /* UIViewController+Category */,
 				1409459A23CD932B00C9AEA2 /* UIImageView + Category */,
 				1452718023331FCC0062E4F6 /* UIColor + Category */,
 				14A60F19232380FE0020F8E7 /* UIBarButtonItem + Category */,
 				149620D722F2E752009C38CB /* MBProgressHUD + Category */,
-				149620A622F27827009C38CB /* UITabBar + Category */,
 				149620A522F27803009C38CB /* UIButton + Category */,
 				149620A422F277F6009C38CB /* UIView + Category */,
 				149620A322F277EA009C38CB /* UILabel + Category */,
@@ -949,12 +1021,14 @@
 				14E778CC2366D3D1002F0C71 /* YHLoadAcvivityCoverViewController.m in Sources */,
 				149620CE22F282C9009C38CB /* YHDateViewController.m in Sources */,
 				144AE4AA22F0286200CD9DF3 /* YHDrawLineView.m in Sources */,
+				140AE9C72584F90C0095ECFB /* YHBaseView.m in Sources */,
 				14D4ECFC22DF022F006009A6 /* YHTableViewController.m in Sources */,
 				146A7B59238280CC0001D75F /* YHHttpRequestTool.m in Sources */,
 				144AE49822F01DEE00CD9DF3 /* YHCustomCollectionViewFlowLayout.m in Sources */,
 				14D4ECFD22DF022F006009A6 /* YHMoreSelectViewController.m in Sources */,
 				14C7943523B6EB70009BB8A0 /* YHDispatch_groupViewController.m in Sources */,
 				144AE3D622EEC67A00CD9DF3 /* YHCollectionViewController.m in Sources */,
+				140AE9C42584F7D60095ECFB /* UITextField+THTextField.m in Sources */,
 				143C1153235D48F900BE111D /* YHLoginViewController.m in Sources */,
 				146A7B58238280CC0001D75F /* YHHttpRequest.m in Sources */,
 				146A7B5A238280CC0001D75F /* YHURLConfiguration.m in Sources */,
@@ -979,7 +1053,10 @@
 				149620AC22F27860009C38CB /* UILabel+YHLabel.m in Sources */,
 				14C7943223B6EABE009BB8A0 /* YHThreadViewController.m in Sources */,
 				14D4ECE422DEF4BB006009A6 /* YHMainTableViewController.m in Sources */,
+				140AE9D22584FCA70095ECFB /* NSString+YHString.m in Sources */,
+				140AE9D5258503C10095ECFB /* UIViewController+DZNEmpty.m in Sources */,
 				14A60F1823235E230020F8E7 /* YHBaseWebLoadViewController.m in Sources */,
+				140AE9C22584F7D60095ECFB /* UIImage+YHImage.m in Sources */,
 				143C1154235D48F900BE111D /* YHAccount.m in Sources */,
 				14527183233320070062E4F6 /* UIColor+YHColor.m in Sources */,
 				1409458F23CD5F8700C9AEA2 /* YHOtherConstantName.m in Sources */,
@@ -996,6 +1073,7 @@
 				146A7B5B238280CC0001D75F /* YHHTTPSessionManager.m in Sources */,
 				14D4ECEB22DEF923006009A6 /* YHSelectIconTableViewCell.m in Sources */,
 				14D4ED0A22DF0E34006009A6 /* YHUnfoldAndFoldViewController.m in Sources */,
+				140AE9CA2584F97C0095ECFB /* YHBaseTableViewCell.m in Sources */,
 				149620DA22F2E786009C38CB /* MBProgressHUD+YHProgressHUD.m in Sources */,
 				144AE4AE22F032EC00CD9DF3 /* YHTextFieldViewController.m in Sources */,
 				14D4ECCB22DEB89C006009A6 /* LYHMianTabbarController.m in Sources */,
@@ -1010,6 +1088,8 @@
 				146A7B5E238283540001D75F /* YHAFNTableViewController.m in Sources */,
 				144AE49B22F01F3100CD9DF3 /* YHStyleCollectionViewCell.m in Sources */,
 				14D4ECFE22DF022F006009A6 /* YHUISubviewsViewController.m in Sources */,
+				140AE9C32584F7D60095ECFB /* UIViewController+YHViewConreoller.m in Sources */,
+				140AE9CE2584FC4A0095ECFB /* UITextView+ZWPlaceHolder.m in Sources */,
 				1489F82923CD53A900AF9D50 /* YHGooodsOperateStyleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1158,7 +1238,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyProject/SupportFiles/MyProject-PrefixHeader.pch";
 				INFOPLIST_FILE = MyProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1180,7 +1260,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MyProject/SupportFiles/MyProject-PrefixHeader.pch";
 				INFOPLIST_FILE = MyProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

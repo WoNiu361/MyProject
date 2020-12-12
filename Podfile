@@ -14,6 +14,7 @@ pod 'Masonry', '~> 1.1.0'
 pod 'FDFullscreenPopGesture', '~> 1.1'
 pod 'MJExtension', '~> 3.1.2'
 pod 'AFNetworking', '~> 3.2.1'
+pod 'DZNEmptyDataSet'
 
 pod 'mob_sharesdk'
 pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull' # 带微信支付的

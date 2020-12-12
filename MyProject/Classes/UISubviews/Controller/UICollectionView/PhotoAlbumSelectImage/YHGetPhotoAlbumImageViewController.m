@@ -150,7 +150,7 @@ static NSString *const imageID = @"YHSelectImageCollectionViewCell";
         }
         [self.imageCollectionView reloadData];
     }
-    PPLog(@"selectImageAmountInteger -  %ld",self.selectImageAmountInteger);
+    PPLog(@"selectImageAmountInteger -  %ld",(long)self.selectImageAmountInteger);
     if (self.selectImageAmountInteger > 0) {
         [self.bottomView changeColor:true];
     } else {

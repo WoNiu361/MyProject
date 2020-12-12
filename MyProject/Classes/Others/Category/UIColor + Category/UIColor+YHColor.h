@@ -16,6 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIColor *)colorWithHex:(long)hexColor alpha:(CGFloat)alpha;
 
+/**
+ *  将16进制色值代码转换为UIColor对象
+ *
+ *  @param hexString 16进制色值，如"#DCDCDC"
+ *
+ *  @return UIColor对象
+ */
++ (UIColor *)colorFromHexCode:(NSString *)hexString;
+
 @end
 
 NS_ASSUME_NONNULL_END
